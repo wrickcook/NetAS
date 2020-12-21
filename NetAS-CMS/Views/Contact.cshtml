@@ -1,0 +1,26 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Contact>
+
+@using Umbraco.Web.PublishedModels
+
+@{
+    Layout = "Master.cshtml";
+    var title = Model.HasValue("title") ? Model.Value("title") : Model.Name;
+    
+    var mainText = Model.Content;
+    
+    var image = Model.Value<IPublishedContent>("heroImage");
+    string imageUrl = image.Url();
+}
+<div class="PageTitleContainer">
+    @title
+</div>
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="@imageUrl" />
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded MainContentTextContainer">
+                <p>@Html.Raw(mainText)</p>
+            </div>
+        </div>
+    </div>
+</section>

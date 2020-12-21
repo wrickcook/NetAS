@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<CollateralSearch>
+
+@using Umbraco.Web.PublishedModels
+
+@{
+    Layout = "Master.cshtml";
+}
+
+<div class="container">
+    <form action="@Model.Url" method="GET" id="CollateralSearch">
+        <div class="row">
+            <div class="">
+                <div class="form-group controls">
+                    <input type="text" class="form-control col-xs-6" placeholder="Enter a VIN" name="q" value = "" />
+                </div>
+            </div>
+            <div class="">
+                <div class="form-control">
+                    <button class="btn btn-primary search-button">Search <i class="fa fa-search"></i></i></button>
+                </div>
+            </div>
+            <div>
+                <p>There are no search results</p>
+            </div>
+        </div>
+    </form>
+</div>
+

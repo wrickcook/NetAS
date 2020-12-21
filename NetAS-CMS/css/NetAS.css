@@ -1,0 +1,42 @@
+﻿body {
+    background-image: url(../Media/netBG.jpg);
+}
+
+a, a:visited {
+    color: #FC9003;
+}
+
+    a:hover {
+        color: #FC9003;
+    }
+
+.MainHeaderContainer {
+    background-color: #e6e9f0;
+    color: #131417;
+    margin-bottom: 20px;
+}
+
+.PageTitleContainer {
+    padding: 20px 0 20px 0;
+    color: rgba(255,255,255,.7);
+    background-color: rgba(47,23,15,.9);
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+.MainContentTextContainer{
+    color: #131417;
+}
+
+/* Template Overrides */
+
+.text-primary
+{
+    color: #131417 !important;
+}
+
+.site-heading 
+{
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
